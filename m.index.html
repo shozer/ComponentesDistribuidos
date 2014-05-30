@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function () {
+            loadTela();
+        });
+		
+function loadTela() {
+            $.ajax({
+                type: "GET",
+                url: "http://localhost:8080/restee/api/produtos",
+                dataType: "json",
+                success: function (data) {
+                    $("#tabelaBody tr").remove();
+                    $.each(data['Content'], function (i, item) {
+						$("#tabelaBody").append("<tr id='" + item.id + "'>" 
+												+"<td>" + item.nome + "</td>"
+												+"<td>" + item.descricao + "</td>"
+												+"<td>" + item.valor + "</td>"
+												+"<td>" + item.quantidade + "</td>"
+												+"<td>"
+												+"<a href='#cadastro' class='ui-btn ui-icon-search ui-btn-icon-notext floatLeft' onclick='selectRow(" + item.id + ")'></a>"
+												+"<a href='#' class='ui-btn ui-icon-delete ui-btn-icon-notext floatLeft' onclick='deleteRow(" + item.id + ")'></a>"
+												+"</td></tr>");
+                    });
+                },
+                error: function () { alert('Erro carregar tela!'); }
+            });
+        }
+
+function buscarProduto() {
+            $.ajax({
+                type: "GET",
+                url: "http://localhost:8080/restee/api/produtos/findNome/" + ($("#txtBuscar").val() == "" ? "*" : $("#txtBuscar").val()),
+                dataType: "json",
+                success: function (data) {
+					$("#tabelaBody tr").remove();
+                    $.each(data['Content'], function (i, item) {
+                        if (data['Content'] != "") {
+							$("#tabelaBody").append("<tr id='" + item.id + "'>" 
+							+"<td>" + item.nome + "</td>"
+							+"<td>" + item.descricao + "</td>"
+							+"<td>" + item.valor + "</td>"
+							+"<td>" + item.quantidade + "</td>"
+							+"<td>"
+							+"<a href='#cadastro' class='ui-btn ui-icon-search ui-btn-icon-notext floatLeft' onclick='selectRow(" + item.id + ")'></a>"
+							+"<a href='#' class='ui-btn ui-icon-delete ui-btn-icon-notext floatLeft' onclick='deleteRow(" + item.id + ")'></a>"
+							+"</td></tr>");
+						}
+						else {
+							alert("O registro não foi encontrado!");
+						}
+						
+                    });
+                },
+                error: function () { alert('Erro carregar tela!'); }
+            });
+        }
+
+function selectRow(id) {
+            $.ajax({
+                type: "GET",
+                url: "http://localhost:8080/restee/api/produtos/" + id,
+                dataType: "json",
+                success: function (data) {
+    
+                    if (data['Content'] != "") {
+    
+                        $("#txtId").val(data['Content'].id);
+                        $("#txtNome").val(data['Content'].nome);
+                        $("#txtDescricao").val(data['Content'].descricao);
+                        $("#txtValor").val(data['Content'].valor);
+                        $("#txtQuantidade").val(data['Content'].quantidade);
+                    }
+                    else {
+                        alert("O registro não foi encontrado!");
+                    }
+                },
+                error: function () { alert('Failed!'); }
+            });
+        }
+		
+function salvarRow() {
+			$.ajax({
+                type: "POST",
+                url: "http://localhost:8080/restee/api/produtos/" + $('#txtId').val(),
+                dataType: "json",
+                mimeType: "multipart/form-data",
+                data: {
+                    "produto.id": $('#txtId').val(),
+                    "produto.nome": $('#txtNome').val(),
+                    "produto.descricao": $('#txtDescricao').val(),
+                    "produto.valor": $('#txtValor').val(),
+                    "produto.quantidade": $('#txtQuantidade').val()
+                },
+                success: function (data) {
+                    loadTela();
+					$("#txtBuscar").val('');
+                    $("#alertSuccess").removeClass("hidden");
+                },
+                error: function () {
+                    $("#alertFail").removeClass("hidden");
+                }
+            });
+        }
+		
+function deleteRow(id) {
+            $.ajax({
+                type: "GET",
+                url: "http://localhost:8080/restee/api/produtos/delete/" + id,
+                dataType: "json",
+                success: function (data) {
+                    $("#" + id).remove();
+                    limparAlert();
+                    criarPaginacao();
+                    $("#alertRemoveSuccess").removeClass("hidden");
+                },
+                error: function () { alert('Erro deletar!'); }
+            });
+        }
+	
+function limparCampos(){
+		$("#txtId").val('');
+		$("#txtNome").val('');
+		$("#txtDescricao").val('');
+		$("#txtValor").val('');
+		$("#txtQuantidade").val('');
+}
+
+function verificaCampos(){
+	if(($("#txtNome").val() != '') 
+		&& ($("#txtDescricao").val() != '') 
+		&& ($("#txtValor").val() != '') 
+		&& ($("#txtQuantidade").val() != ''))
+	{
+		$("#btnSalvar").removeClass("ui-state-disabled");
+	}else{
+		$("#btnSalvar").addClass("ui-state-disabled");
+	}
+}
+</script>
+
+<style type="text/css">
+.menu{
+	max-width:50%;
+	margin: auto; 
+}
+
+.minWidth{
+	min-width:390px !important;
+}
+.alignCenter{
+	text-align:center;
+}
+
+.width20{
+	width:20px;
+}
+
+.width100perc{
+	width:100%;
+}
+
+.tabelaList{
+	width:100%;
+}
+
+.tabelaList th{
+	color: #000000;
+	background-color: #E8E8E8 ;
+	border: 1px solid #E8E8E8 ;
+	border-collapse:collapse;
+	padding: 3px;
+	vertical-align: top;
+	text-align: left;
+}
+.tabelaList tr:nth-child(even) {
+	background-color: #F0F0F0 ;
+}
+
+.floatLeft{
+	float: Left;
+}
+
+</style>
+</head>
+<body>
+	<!-- HOME -->
+	<div data-role="page" id="home" class="minWidth">
+	  <div data-role="header">
+		<h1>Componentes Distribuidos</h1>	
+	  </div>
+	  <div data-role="main" class="ui-content">
+			<div class="menu alignCenter">
+				<p><strong>PRODUTOS</strong></p>
+				<a href="#lista" class="ui-btn ui-icon-grid ui-btn-icon-left" data-transition="slide">Listar</a>
+				<a href="#cadastro" class="ui-btn ui-icon-plus ui-btn-icon-left" data-transition="slide" onclick="limparCampos()">Cadastrar</a>
+				<a href="#sobre" class="ui-btn ui-icon-info ui-btn-icon-left" data-transition="slide">Sobre</a>
+			</div>
+	  </div>
+	  <div data-role="footer" data-position="fixed">
+		<h1>Nenhum Direito Reservado</h1>
+	  </div>
+	</div>
+	
+	<!-- PAGINA LISTAGEM -->
+	<div data-role="page" id="lista" class="minWidth">
+	  <div data-role="header">
+		<a href="#home" class="ui-btn ui-icon-home ui-btn-icon-left" data-transition="slide" data-direction="reverse">Home</a>
+	  <h1>Listar Produtos</h1>
+	  <a href="#cadastro" class="ui-btn ui-icon-plus ui-btn-icon-left" data-transition="slide" onclick="limparCampos()">Novo</a>
+	  </div>
+	  <div data-role="main" class="ui-content">
+			<div classe="alignCenter">
+				<input type="search" id="txtBuscar" onchange="buscarProduto()"></input>
+				<table class="tabelaList">
+					<thead>
+						<tr>
+						  <th>Nome</th>
+						  <th>Desc.</th> 
+						  <th>Val.</th>
+						  <th>Qtd</th>
+						  <th>Ação</th>
+						<tr>
+					</thead>
+					<tbody id="tabelaBody">
+					</tbody>
+				</table>
+			</div>		
+	   </div>	
+	   <div data-role="footer" data-position="fixed">
+		<h1>Nenhum Direito Reservado</h1>
+	   </div>
+	</div>
+
+	
+		<!-- PAGINA CADASTRAR -->
+	<div data-role="page" id="cadastro" class="minWidth">
+	  <div data-role="header">
+		<a href="#home" class="ui-btn ui-icon-home ui-btn-icon-left
+		" data-transition="slide" data-direction="reverse">Home</a>
+	  <h1>Cadastrar Produtos</h1>
+	  
+	  </div>
+	  <div data-role="main" class="ui-content">
+			<form>
+				<input type="hidden" id="txtId" value="">
+				Nome: <input type="text" id="txtNome" onchange="verificaCampos()">
+				Descrição: <input type="text"  id="txtDescricao" onchange="verificaCampos()">
+				Valor: <input type="text" id="txtValor" onchange="verificaCampos()">
+				Quantidade: <input type="text" id="txtQuantidade" onchange="verificaCampos()">
+				<a href="#lista" id="btnSalvar" class="ui-btn ui-state-disabled" data-transition="slide" onclick="salvarRow()">Salvar</a>
+			</form>
+	  </div>
+
+	  <div data-role="footer" data-position="fixed">
+		<h1>Nenhum Direito Reservado</h1>
+	  </div>
+	</div>
+	
+	<!-- SOBRE -->
+	<div data-role="page" id="sobre" class="minWidth">
+	  <div data-role="header">
+	  <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-left" data-transition="slide" data-direction="reverse">Home</a>
+		<h1>Componentes Distribuidos</h1>	
+	  </div>
+	  <div data-role="main" class="ui-content">
+			<div class="menu alignCenter">
+				<p><strong>Equipe:</strong></p>
+				<p>Daniel Brasileiro</p>
+				<p>Leonardo Salvador</p>
+				<p>Marcus Paulo</p>
+				<p>Matheus Almeida</p>
+			</div>
+	  </div>
+	  <div data-role="footer" data-position="fixed">
+		<h1>Nenhum Direito Reservado</h1>
+	  </div>
+	</div>
+</body>
+</html>

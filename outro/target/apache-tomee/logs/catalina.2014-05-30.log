@@ -1,0 +1,422 @@
+Mai 30, 2014 12:00:19 AM org.apache.openejb.core.CoreUserTransaction begin
+INFO: Started user transaction org.apache.geronimo.transaction.manager.TransactionImpl@224caefd
+Mai 30, 2014 12:00:19 AM org.apache.openejb.core.CoreUserTransaction rollback
+INFO: Rolling back user transaction org.apache.geronimo.transaction.manager.TransactionImpl@224caefd
+Mai 30, 2014 12:00:25 AM org.apache.openejb.core.CoreUserTransaction begin
+INFO: Started user transaction org.apache.geronimo.transaction.manager.TransactionImpl@55b63396
+Mai 30, 2014 12:00:25 AM org.apache.openejb.core.CoreUserTransaction commit
+INFO: Committing user transaction org.apache.geronimo.transaction.manager.TransactionImpl@55b63396
+Mai 30, 2014 12:01:17 AM org.apache.openejb.core.CoreUserTransaction begin
+INFO: Started user transaction org.apache.geronimo.transaction.manager.TransactionImpl@6a67c3d9
+Mai 30, 2014 12:01:17 AM org.apache.openejb.core.CoreUserTransaction commit
+INFO: Committing user transaction org.apache.geronimo.transaction.manager.TransactionImpl@6a67c3d9
+Mai 30, 2014 12:45:06 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.7.0_17\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\app\product\11.2.0\client_1;C:\app\product\11.2.0\client_1\bin;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files\Java\jdk1.7.0_17\bin;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files (x86)\Microsoft Team Foundation Server 2010 Power Tools\;C:\Program Files (x86)\Microsoft Team Foundation Server 2010 Power Tools\Best Practices Analyzer\;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;c:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\MKVToolNix;C:\Program Files (x86)\Android\android-sdk\platform-tools;C:\Program Files (x86)\Android\android-sdk\tools;C:\Program Files\apache-ant\bin;C:\Program Files\nodejs\;C:\Desenvolvimento\cook\bin;C:\Desenvolvimento\play-2.1.4;C:\Desenvolvimento\mongodb\bin;C:\Users\Matheus Santana\Documents\MAVEN\apache-maven-3.0.5\bin;.
+Mai 30, 2014 12:45:06 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Mai 30, 2014 12:45:06 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Mai 30, 2014 12:45:08 AM org.apache.openejb.util.OptionsLog info
+INFO: Using 'openejb.jdbc.datasource-creator=org.apache.tomee.jdbc.TomEEDataSourceCreator'
+Mai 30, 2014 12:45:08 AM org.apache.openejb.OpenEJB$Instance <init>
+INFO: ********************************************************************************
+Mai 30, 2014 12:45:08 AM org.apache.openejb.OpenEJB$Instance <init>
+INFO: OpenEJB http://openejb.apache.org/
+Mai 30, 2014 12:45:08 AM org.apache.openejb.OpenEJB$Instance <init>
+INFO: Startup: Fri May 30 00:45:08 GMT-03:00 2014
+Mai 30, 2014 12:45:08 AM org.apache.openejb.OpenEJB$Instance <init>
+INFO: Copyright 1999-2012 (C) Apache OpenEJB Project, All Rights Reserved.
+Mai 30, 2014 12:45:08 AM org.apache.openejb.OpenEJB$Instance <init>
+INFO: Version: 4.5.0
+Mai 30, 2014 12:45:08 AM org.apache.openejb.OpenEJB$Instance <init>
+INFO: Build date: 20120928
+Mai 30, 2014 12:45:08 AM org.apache.openejb.OpenEJB$Instance <init>
+INFO: Build time: 08:12
+Mai 30, 2014 12:45:08 AM org.apache.openejb.OpenEJB$Instance <init>
+INFO: ********************************************************************************
+Mai 30, 2014 12:45:08 AM org.apache.openejb.OpenEJB$Instance <init>
+INFO: openejb.home = C:\Users\Matheus Santana\Documents\Nova pasta\outro\target\apache-tomee
+Mai 30, 2014 12:45:08 AM org.apache.openejb.OpenEJB$Instance <init>
+INFO: openejb.base = C:\Users\Matheus Santana\Documents\Nova pasta\outro\target\apache-tomee
+Mai 30, 2014 12:45:08 AM org.apache.openejb.cdi.CdiBuilder initializeOWB
+INFO: Created new singletonService org.apache.openejb.cdi.ThreadSingletonServiceImpl@7d8e7369
+Mai 30, 2014 12:45:08 AM org.apache.openejb.cdi.CdiBuilder initializeOWB
+INFO: Succeeded in installing singleton service
+Mai 30, 2014 12:45:08 AM org.apache.openejb.config.ConfigurationFactory init
+INFO: openejb configuration file is 'C:\Users\Matheus Santana\Documents\Nova pasta\outro\target\apache-tomee\conf\tomee.xml'
+Mai 30, 2014 12:45:08 AM org.apache.openejb.util.OptionsLog info
+INFO: Using 'openejb.provider.default=org.apache.tomee'
+Mai 30, 2014 12:45:08 AM org.apache.openejb.config.ConfigurationFactory configureService
+INFO: Configuring Service(id=Tomcat Security Service, type=SecurityService, provider-id=Tomcat Security Service)
+Mai 30, 2014 12:45:08 AM org.apache.openejb.config.ConfigurationFactory configureService
+INFO: Configuring Service(id=Default Transaction Manager, type=TransactionManager, provider-id=Default Transaction Manager)
+Mai 30, 2014 12:45:08 AM org.apache.openejb.config.ConfigurationFactory configureService
+INFO: Configuring Service(id=My DataSource, type=Resource, provider-id=Default JDBC Database)
+Mai 30, 2014 12:45:08 AM org.apache.openejb.config.ConfigurationFactory configureService
+INFO: Configuring Service(id=My Unmanaged DataSource, type=Resource, provider-id=Default JDBC Database)
+Mai 30, 2014 12:45:08 AM org.apache.openejb.config.ConfigurationFactory configureService
+INFO: Configuring Service(id=My Singleton Container, type=Container, provider-id=Default Singleton Container)
+Mai 30, 2014 12:45:08 AM org.apache.openejb.config.ConfigurationFactory configureService
+INFO: Configuring Service(id=My Stateful Container, type=Container, provider-id=Default Stateful Container)
+Mai 30, 2014 12:45:08 AM org.apache.openejb.config.ConfigurationFactory configureService
+INFO: Configuring Service(id=My Stateless Container, type=Container, provider-id=Default Stateless Container)
+Mai 30, 2014 12:45:08 AM org.apache.openejb.util.OptionsLog info
+INFO: Using 'openejb.system.apps=true'
+Mai 30, 2014 12:45:08 AM org.apache.openejb.config.ConfigurationFactory configureApplication
+INFO: Configuring enterprise application: null
+Mai 30, 2014 12:45:08 AM org.apache.openejb.config.InitEjbDeployments deploy
+INFO: Using openejb.deploymentId.format '{ejbName}'
+Mai 30, 2014 12:45:08 AM org.apache.openejb.config.InitEjbDeployments deploy
+INFO: Auto-deploying ejb openejb/Deployer: EjbDeployment(deployment-id=openejb/Deployer)
+Mai 30, 2014 12:45:08 AM org.apache.openejb.config.InitEjbDeployments deploy
+INFO: Auto-deploying ejb openejb/ConfigurationInfo: EjbDeployment(deployment-id=openejb/ConfigurationInfo)
+Mai 30, 2014 12:45:08 AM org.apache.openejb.config.InitEjbDeployments deploy
+INFO: Auto-deploying ejb MEJB: EjbDeployment(deployment-id=MEJB)
+Mai 30, 2014 12:45:08 AM org.apache.openejb.config.AppInfoBuilder build
+INFO: Enterprise application "openejb" loaded.
+Mai 30, 2014 12:45:08 AM org.apache.openejb.assembler.classic.Assembler createRecipe
+INFO: Creating TransactionManager(id=Default Transaction Manager)
+Mai 30, 2014 12:45:08 AM org.apache.openejb.assembler.classic.Assembler createRecipe
+INFO: Creating SecurityService(id=Tomcat Security Service)
+Mai 30, 2014 12:45:08 AM org.apache.openejb.assembler.classic.Assembler createRecipe
+INFO: Creating Resource(id=My DataSource)
+Mai 30, 2014 12:45:08 AM org.apache.openejb.assembler.classic.Assembler createRecipe
+INFO: Creating Resource(id=My Unmanaged DataSource)
+Mai 30, 2014 12:45:08 AM org.apache.openejb.assembler.classic.Assembler createRecipe
+INFO: Creating Container(id=My Singleton Container)
+Mai 30, 2014 12:45:08 AM org.apache.openejb.assembler.classic.Assembler createRecipe
+INFO: Creating Container(id=My Stateful Container)
+Mai 30, 2014 12:45:08 AM org.apache.openejb.core.stateful.SimplePassivater init
+INFO: Using directory C:\Users\Matheus Santana\Documents\Nova pasta\outro\target\apache-tomee\temp for stateful session passivation
+Mai 30, 2014 12:45:09 AM org.apache.openejb.assembler.classic.Assembler createRecipe
+INFO: Creating Container(id=My Stateless Container)
+Mai 30, 2014 12:45:09 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFO: Assembling app: openejb
+Mai 30, 2014 12:45:09 AM org.apache.openejb.util.OptionsLog info
+INFO: Using 'openejb.jndiname.format={deploymentId}{interfaceType.openejbLegacyName}'
+Mai 30, 2014 12:45:09 AM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFO: Jndi(name=openejb/DeployerBusinessRemote) --> Ejb(deployment-id=openejb/Deployer)
+Mai 30, 2014 12:45:09 AM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFO: Jndi(name=global/openejb/openejb/Deployer!org.apache.openejb.assembler.Deployer) --> Ejb(deployment-id=openejb/Deployer)
+Mai 30, 2014 12:45:09 AM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFO: Jndi(name=global/openejb/openejb/Deployer) --> Ejb(deployment-id=openejb/Deployer)
+Mai 30, 2014 12:45:09 AM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFO: Jndi(name=openejb/ConfigurationInfoBusinessRemote) --> Ejb(deployment-id=openejb/ConfigurationInfo)
+Mai 30, 2014 12:45:09 AM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFO: Jndi(name=global/openejb/openejb/ConfigurationInfo!org.apache.openejb.assembler.classic.cmd.ConfigurationInfo) --> Ejb(deployment-id=openejb/ConfigurationInfo)
+Mai 30, 2014 12:45:09 AM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFO: Jndi(name=global/openejb/openejb/ConfigurationInfo) --> Ejb(deployment-id=openejb/ConfigurationInfo)
+Mai 30, 2014 12:45:09 AM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFO: Jndi(name=MEJB) --> Ejb(deployment-id=MEJB)
+Mai 30, 2014 12:45:09 AM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFO: Jndi(name=global/openejb/MEJB!javax.management.j2ee.ManagementHome) --> Ejb(deployment-id=MEJB)
+Mai 30, 2014 12:45:09 AM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFO: Jndi(name=global/openejb/MEJB) --> Ejb(deployment-id=MEJB)
+Mai 30, 2014 12:45:09 AM org.apache.openejb.cdi.CdiBuilder initSingleton
+INFO: Existing thread singleton service in SystemInstance() org.apache.openejb.cdi.ThreadSingletonServiceImpl@7d8e7369
+Mai 30, 2014 12:45:09 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFO: OpenWebBeans Container is starting...
+Mai 30, 2014 12:45:09 AM org.apache.webbeans.plugins.PluginLoader startUp
+INFO: Adding OpenWebBeansPlugin : [CdiPlugin]
+Mai 30, 2014 12:45:09 AM org.apache.webbeans.plugins.PluginLoader startUp
+INFO: Adding OpenWebBeansPlugin : [OpenWebBeansJsfPlugin]
+Mai 30, 2014 12:45:09 AM org.apache.openejb.cdi.BeansDeployer validateInjectionPoints
+INFO: All injection points are validated successfully.
+Mai 30, 2014 12:45:09 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFO: OpenWebBeans Container has started, it took 133 ms.
+Mai 30, 2014 12:45:09 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFO: Created Ejb(deployment-id=openejb/Deployer, ejb-name=openejb/Deployer, container=My Stateless Container)
+Mai 30, 2014 12:45:09 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFO: Created Ejb(deployment-id=MEJB, ejb-name=MEJB, container=My Stateless Container)
+Mai 30, 2014 12:45:09 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFO: Created Ejb(deployment-id=openejb/ConfigurationInfo, ejb-name=openejb/ConfigurationInfo, container=My Stateless Container)
+Mai 30, 2014 12:45:09 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFO: Started Ejb(deployment-id=openejb/Deployer, ejb-name=openejb/Deployer, container=My Stateless Container)
+Mai 30, 2014 12:45:09 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFO: Started Ejb(deployment-id=MEJB, ejb-name=MEJB, container=My Stateless Container)
+Mai 30, 2014 12:45:09 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFO: Started Ejb(deployment-id=openejb/ConfigurationInfo, ejb-name=openejb/ConfigurationInfo, container=My Stateless Container)
+Mai 30, 2014 12:45:09 AM org.apache.openejb.assembler.classic.Assembler deployMBean
+INFO: Deployed MBean(openejb.user.mbeans:application=openejb,group=org.apache.openejb.assembler.monitoring,name=JMXDeployer)
+Mai 30, 2014 12:45:09 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFO: Deployed Application(path=openejb)
+Mai 30, 2014 12:45:09 AM org.apache.openejb.server.ServiceManager initServer
+INFO: Creating ServerService(id=cxf)
+Mai 30, 2014 12:45:10 AM org.apache.openejb.server.ServiceManager initServer
+INFO: Creating ServerService(id=cxf-rs)
+Mai 30, 2014 12:45:10 AM org.apache.openejb.server.SimpleServiceManager start
+INFO: Starting service cxf
+Mai 30, 2014 12:45:10 AM org.apache.openejb.server.SimpleServiceManager start
+INFO: Started service cxf
+Mai 30, 2014 12:45:10 AM org.apache.openejb.server.SimpleServiceManager start
+INFO: Starting service cxf-rs
+Mai 30, 2014 12:45:10 AM org.apache.openejb.server.SimpleServiceManager start
+INFO: Started service cxf-rs
+Mai 30, 2014 12:45:10 AM org.apache.openejb.server.SimpleServiceManager start
+INFO:   ** Bound Services **
+Mai 30, 2014 12:45:10 AM org.apache.openejb.server.SimpleServiceManager printRow
+INFO:   NAME                 IP              PORT  
+Mai 30, 2014 12:45:10 AM org.apache.openejb.server.SimpleServiceManager start
+INFO: -------
+Mai 30, 2014 12:45:10 AM org.apache.openejb.server.SimpleServiceManager start
+INFO: Ready!
+Mai 30, 2014 12:45:10 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 4280 ms
+Mai 30, 2014 12:45:10 AM org.apache.tomee.catalina.OpenEJBNamingContextListener bindResource
+INFO: Importing a Tomcat Resource with id 'UserDatabase' of type 'org.apache.catalina.UserDatabase'.
+Mai 30, 2014 12:45:10 AM org.apache.openejb.assembler.classic.Assembler createRecipe
+INFO: Creating Resource(id=UserDatabase)
+Mai 30, 2014 12:45:10 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Mai 30, 2014 12:45:10 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.30
+Mai 30, 2014 12:45:10 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive C:\Users\Matheus Santana\Documents\Nova pasta\outro\target\apache-tomee\webapps\restee.war
+Mai 30, 2014 12:45:10 AM org.apache.tomee.catalina.TomcatWebAppBuilder init
+INFO: -------------------------
+TomcatWebAppBuilder.init /restee
+Mai 30, 2014 12:45:10 AM org.apache.openejb.util.JarExtractor extract
+INFO: Extracting jar: C:\Users\Matheus Santana\Documents\Nova pasta\outro\target\apache-tomee\webapps\restee.war
+Mai 30, 2014 12:45:10 AM org.apache.openejb.util.JarExtractor extract
+INFO: Extracted path: C:\Users\Matheus Santana\Documents\Nova pasta\outro\target\apache-tomee\webapps\restee
+Mai 30, 2014 12:45:10 AM org.apache.openejb.util.OptionsLog info
+INFO: Using 'openejb.session.manager=org.apache.tomee.catalina.session.QuickSessionManager'
+Mai 30, 2014 12:45:10 AM org.apache.tomee.catalina.TomEEClassLoaderEnricher validateJarFile
+WARNING: jar 'C:\Users\Matheus Santana\Documents\Nova pasta\outro\target\apache-tomee\webapps\restee\WEB-INF\lib\hibernate-jpa-2.0-api-1.0.1.Final.jar' contains offending class: javax.persistence.Entity. It will be ignored.
+Mai 30, 2014 12:45:10 AM org.apache.tomee.catalina.TomEEClassLoaderEnricher validateJarFile
+WARNING: jar 'C:\Users\Matheus Santana\Documents\Nova pasta\outro\target\apache-tomee\webapps\restee\WEB-INF\lib\jboss-transaction-api_1.1_spec-1.0.0.Final.jar' contains offending class: javax.transaction.Transaction. It will be ignored.
+Mai 30, 2014 12:45:11 AM org.apache.openejb.config.ConfigurationFactory configureApplication
+INFO: Configuring enterprise application: C:\Users\Matheus Santana\Documents\Nova pasta\outro\target\apache-tomee\webapps\restee
+Mai 30, 2014 12:45:12 AM org.apache.openejb.config.InitEjbDeployments deploy
+INFO: Auto-deploying ejb CargoDao: EjbDeployment(deployment-id=CargoDao)
+Mai 30, 2014 12:45:12 AM org.apache.openejb.config.InitEjbDeployments deploy
+INFO: Auto-deploying ejb CotacaoWS: EjbDeployment(deployment-id=CotacaoWS)
+Mai 30, 2014 12:45:12 AM org.apache.openejb.config.InitEjbDeployments deploy
+INFO: Auto-deploying ejb PedidoDAO: EjbDeployment(deployment-id=PedidoDAO)
+Mai 30, 2014 12:45:12 AM org.apache.openejb.config.InitEjbDeployments deploy
+INFO: Auto-deploying ejb CargoWS: EjbDeployment(deployment-id=CargoWS)
+Mai 30, 2014 12:45:12 AM org.apache.openejb.config.InitEjbDeployments deploy
+INFO: Auto-deploying ejb ProdutoWS: EjbDeployment(deployment-id=ProdutoWS)
+Mai 30, 2014 12:45:12 AM org.apache.openejb.config.InitEjbDeployments deploy
+INFO: Auto-deploying ejb ProdutoDAO: EjbDeployment(deployment-id=ProdutoDAO)
+Mai 30, 2014 12:45:12 AM org.apache.openejb.config.InitEjbDeployments deploy
+INFO: Auto-deploying ejb CotacaoDAO: EjbDeployment(deployment-id=CotacaoDAO)
+Mai 30, 2014 12:45:12 AM org.apache.openejb.config.InitEjbDeployments deploy
+INFO: Auto-deploying ejb PedidoWS: EjbDeployment(deployment-id=PedidoWS)
+Mai 30, 2014 12:45:12 AM org.apache.openejb.config.ConfigurationFactory configureService
+INFO: Configuring Service(id=java:/jdbc/gp-hsqldb, type=Resource, provider-id=Default JDBC Database)
+Mai 30, 2014 12:45:12 AM org.apache.openejb.assembler.classic.Assembler createRecipe
+INFO: Creating Resource(id=java:/jdbc/gp-hsqldb)
+Mai 30, 2014 12:45:12 AM org.apache.openejb.config.ConfigurationFactory configureService
+INFO: Configuring Service(id=Default Managed Container, type=Container, provider-id=Default Managed Container)
+Mai 30, 2014 12:45:12 AM org.apache.openejb.config.AutoConfig createContainer
+INFO: Auto-creating a container for bean localhost/restee.Comp: Container(type=MANAGED, id=Default Managed Container)
+Mai 30, 2014 12:45:12 AM org.apache.openejb.assembler.classic.Assembler createRecipe
+INFO: Creating Container(id=Default Managed Container)
+Mai 30, 2014 12:45:12 AM org.apache.openejb.core.managed.SimplePassivater init
+INFO: Using directory C:\Users\Matheus Santana\Documents\Nova pasta\outro\target\apache-tomee\temp for stateful session passivation
+Mai 30, 2014 12:45:12 AM org.apache.openejb.config.AutoConfig processResourceRef
+INFO: Auto-linking resource-ref 'openejb/Resource/java:/jdbc/gp-hsqldb' in bean localhost/restee.Comp to Resource(id=My DataSource)
+Mai 30, 2014 12:45:12 AM org.apache.openejb.config.AutoConfig processResourceRef
+INFO: Auto-linking resource-ref 'openejb/Resource/java:/jdbc/gp-hsqldb' in bean CargoDao to Resource(id=My DataSource)
+Mai 30, 2014 12:45:12 AM org.apache.openejb.config.AutoConfig processResourceRef
+INFO: Auto-linking resource-ref 'openejb/Resource/java:/jdbc/gp-hsqldb' in bean CotacaoWS to Resource(id=My DataSource)
+Mai 30, 2014 12:45:12 AM org.apache.openejb.config.AutoConfig processResourceRef
+INFO: Auto-linking resource-ref 'openejb/Resource/java:/jdbc/gp-hsqldb' in bean PedidoDAO to Resource(id=My DataSource)
+Mai 30, 2014 12:45:12 AM org.apache.openejb.config.AutoConfig processResourceRef
+INFO: Auto-linking resource-ref 'openejb/Resource/java:/jdbc/gp-hsqldb' in bean CargoWS to Resource(id=My DataSource)
+Mai 30, 2014 12:45:12 AM org.apache.openejb.config.AutoConfig processResourceRef
+INFO: Auto-linking resource-ref 'openejb/Resource/java:/jdbc/gp-hsqldb' in bean ProdutoWS to Resource(id=My DataSource)
+Mai 30, 2014 12:45:12 AM org.apache.openejb.config.AutoConfig processResourceRef
+INFO: Auto-linking resource-ref 'openejb/Resource/java:/jdbc/gp-hsqldb' in bean ProdutoDAO to Resource(id=My DataSource)
+Mai 30, 2014 12:45:12 AM org.apache.openejb.config.AutoConfig processResourceRef
+INFO: Auto-linking resource-ref 'openejb/Resource/java:/jdbc/gp-hsqldb' in bean CotacaoDAO to Resource(id=My DataSource)
+Mai 30, 2014 12:45:12 AM org.apache.openejb.config.AutoConfig processResourceRef
+INFO: Auto-linking resource-ref 'openejb/Resource/java:/jdbc/gp-hsqldb' in bean PedidoWS to Resource(id=My DataSource)
+Mai 30, 2014 12:45:12 AM org.apache.openejb.config.AutoConfig deploy
+INFO: Configuring PersistenceUnit(name=gp-unit, provider=org.hibernate.ejb.HibernatePersistence)
+Mai 30, 2014 12:45:12 AM org.apache.openejb.config.AutoConfig setJtaDataSource
+INFO: Adjusting PersistenceUnit gp-unit <jta-data-source> to Resource ID 'My DataSource' from '/jdbc/gp-hsqldb'
+Mai 30, 2014 12:45:12 AM org.apache.openejb.config.AutoConfig setNonJtaDataSource
+INFO: Adjusting PersistenceUnit gp-unit <non-jta-data-source> to Resource ID 'My Unmanaged DataSource' from 'null'
+Mai 30, 2014 12:45:12 AM org.apache.openejb.config.AppInfoBuilder build
+INFO: Enterprise application "C:\Users\Matheus Santana\Documents\Nova pasta\outro\target\apache-tomee\webapps\restee" loaded.
+Mai 30, 2014 12:45:12 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFO: Assembling app: C:\Users\Matheus Santana\Documents\Nova pasta\outro\target\apache-tomee\webapps\restee
+Mai 30, 2014 12:45:12 AM org.hibernate.annotations.common.Version <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+Mai 30, 2014 12:45:12 AM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate Core {4.1.7.Final}
+Mai 30, 2014 12:45:12 AM org.hibernate.cfg.Environment <clinit>
+INFO: HHH000206: hibernate.properties not found
+Mai 30, 2014 12:45:12 AM org.hibernate.cfg.Environment buildBytecodeProvider
+INFO: HHH000021: Bytecode provider name : javassist
+Mai 30, 2014 12:45:12 AM org.hibernate.ejb.Ejb3Configuration configure
+INFO: HHH000204: Processing PersistenceUnitInfo [
+	name: gp-unit
+	...]
+Mai 30, 2014 12:45:13 AM org.hibernate.mapping.RootClass checkCompositeIdentifier
+WARN: HHH000038: Composite-id class does not override equals(): models.dto.ProdutoPedido$PK
+Mai 30, 2014 12:45:13 AM org.hibernate.mapping.RootClass checkCompositeIdentifier
+WARN: HHH000039: Composite-id class does not override hashCode(): models.dto.ProdutoPedido$PK
+Mai 30, 2014 12:45:13 AM org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator instantiateExplicitConnectionProvider
+INFO: HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+Mai 30, 2014 12:45:13 AM org.hsqldb.persist.Logger logInfoEvent
+INFO: checkpointClose start
+Mai 30, 2014 12:45:15 AM org.hsqldb.persist.Logger logInfoEvent
+INFO: checkpointClose end
+Mai 30, 2014 12:45:15 AM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+Mai 30, 2014 12:45:15 AM org.hibernate.engine.transaction.internal.TransactionFactoryInitiator initiateService
+INFO: HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jta.CMTTransactionFactory
+Mai 30, 2014 12:45:15 AM org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory <init>
+INFO: HHH000397: Using ASTQueryTranslatorFactory
+Mai 30, 2014 12:45:15 AM org.hibernate.tool.hbm2ddl.SchemaExport execute
+INFO: HHH000227: Running hbm2ddl schema export
+Mai 30, 2014 12:45:15 AM org.hibernate.tool.hbm2ddl.SchemaExport execute
+INFO: HHH000230: Schema export complete
+Mai 30, 2014 12:45:16 AM org.apache.openejb.assembler.classic.PersistenceBuilder createEntityManagerFactory
+INFO: PersistenceUnit(name=gp-unit, provider=org.hibernate.ejb.HibernatePersistence) - provider time 3829ms
+Mai 30, 2014 12:45:16 AM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFO: Jndi(name=CargoDaoLocalBean) --> Ejb(deployment-id=CargoDao)
+Mai 30, 2014 12:45:16 AM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFO: Jndi(name=global/localhost/restee/CargoDao!models.CargoDao) --> Ejb(deployment-id=CargoDao)
+Mai 30, 2014 12:45:16 AM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFO: Jndi(name=global/localhost/restee/CargoDao) --> Ejb(deployment-id=CargoDao)
+Mai 30, 2014 12:45:16 AM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFO: Jndi(name=PedidoDAOLocalBean) --> Ejb(deployment-id=PedidoDAO)
+Mai 30, 2014 12:45:16 AM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFO: Jndi(name=global/localhost/restee/PedidoDAO!models.PedidoDAO) --> Ejb(deployment-id=PedidoDAO)
+Mai 30, 2014 12:45:16 AM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFO: Jndi(name=global/localhost/restee/PedidoDAO) --> Ejb(deployment-id=PedidoDAO)
+Mai 30, 2014 12:45:16 AM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFO: Jndi(name=ProdutoDAOLocalBean) --> Ejb(deployment-id=ProdutoDAO)
+Mai 30, 2014 12:45:16 AM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFO: Jndi(name=global/localhost/restee/ProdutoDAO!models.ProdutoDAO) --> Ejb(deployment-id=ProdutoDAO)
+Mai 30, 2014 12:45:16 AM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFO: Jndi(name=global/localhost/restee/ProdutoDAO) --> Ejb(deployment-id=ProdutoDAO)
+Mai 30, 2014 12:45:16 AM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFO: Jndi(name=CotacaoDAOLocalBean) --> Ejb(deployment-id=CotacaoDAO)
+Mai 30, 2014 12:45:16 AM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFO: Jndi(name=global/localhost/restee/CotacaoDAO!models.CotacaoDAO) --> Ejb(deployment-id=CotacaoDAO)
+Mai 30, 2014 12:45:16 AM org.apache.openejb.assembler.classic.JndiBuilder bind
+INFO: Jndi(name=global/localhost/restee/CotacaoDAO) --> Ejb(deployment-id=CotacaoDAO)
+Mai 30, 2014 12:45:16 AM org.apache.openejb.cdi.CdiBuilder initSingleton
+INFO: Existing thread singleton service in SystemInstance() org.apache.openejb.cdi.ThreadSingletonServiceImpl@7d8e7369
+Mai 30, 2014 12:45:16 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFO: OpenWebBeans Container is starting...
+Mai 30, 2014 12:45:16 AM org.apache.webbeans.plugins.PluginLoader startUp
+INFO: Adding OpenWebBeansPlugin : [CdiPlugin]
+Mai 30, 2014 12:45:16 AM org.apache.webbeans.plugins.PluginLoader startUp
+INFO: Adding OpenWebBeansPlugin : [OpenWebBeansJsfPlugin]
+Mai 30, 2014 12:45:16 AM org.apache.openejb.cdi.BeansDeployer validateInjectionPoints
+INFO: All injection points are validated successfully.
+Mai 30, 2014 12:45:16 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFO: OpenWebBeans Container has started, it took 183 ms.
+Mai 30, 2014 12:45:16 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFO: Created Ejb(deployment-id=PedidoWS, ejb-name=PedidoWS, container=My Stateless Container)
+Mai 30, 2014 12:45:16 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFO: Created Ejb(deployment-id=PedidoDAO, ejb-name=PedidoDAO, container=My Stateless Container)
+Mai 30, 2014 12:45:16 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFO: Created Ejb(deployment-id=CotacaoWS, ejb-name=CotacaoWS, container=My Stateless Container)
+Mai 30, 2014 12:45:16 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFO: Created Ejb(deployment-id=CotacaoDAO, ejb-name=CotacaoDAO, container=My Stateless Container)
+Mai 30, 2014 12:45:16 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFO: Created Ejb(deployment-id=ProdutoDAO, ejb-name=ProdutoDAO, container=My Stateless Container)
+Mai 30, 2014 12:45:16 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFO: Created Ejb(deployment-id=CargoDao, ejb-name=CargoDao, container=My Stateless Container)
+Mai 30, 2014 12:45:16 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFO: Created Ejb(deployment-id=ProdutoWS, ejb-name=ProdutoWS, container=My Stateless Container)
+Mai 30, 2014 12:45:16 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFO: Created Ejb(deployment-id=CargoWS, ejb-name=CargoWS, container=My Stateless Container)
+Mai 30, 2014 12:45:16 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFO: Started Ejb(deployment-id=PedidoWS, ejb-name=PedidoWS, container=My Stateless Container)
+Mai 30, 2014 12:45:16 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFO: Started Ejb(deployment-id=PedidoDAO, ejb-name=PedidoDAO, container=My Stateless Container)
+Mai 30, 2014 12:45:16 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFO: Started Ejb(deployment-id=CotacaoWS, ejb-name=CotacaoWS, container=My Stateless Container)
+Mai 30, 2014 12:45:16 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFO: Started Ejb(deployment-id=CotacaoDAO, ejb-name=CotacaoDAO, container=My Stateless Container)
+Mai 30, 2014 12:45:16 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFO: Started Ejb(deployment-id=ProdutoDAO, ejb-name=ProdutoDAO, container=My Stateless Container)
+Mai 30, 2014 12:45:16 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFO: Started Ejb(deployment-id=CargoDao, ejb-name=CargoDao, container=My Stateless Container)
+Mai 30, 2014 12:45:16 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFO: Started Ejb(deployment-id=ProdutoWS, ejb-name=ProdutoWS, container=My Stateless Container)
+Mai 30, 2014 12:45:16 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFO: Started Ejb(deployment-id=CargoWS, ejb-name=CargoWS, container=My Stateless Container)
+Mai 30, 2014 12:45:16 AM org.apache.tomee.catalina.TomcatWebAppBuilder deployWebApps
+INFO: using context file C:\Users\Matheus Santana\Documents\Nova pasta\outro\target\apache-tomee\webapps\restee\META-INF\context.xml
+Mai 30, 2014 12:45:16 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFO: Deployed Application(path=C:\Users\Matheus Santana\Documents\Nova pasta\outro\target\apache-tomee\webapps\restee)
+Mai 30, 2014 12:45:16 AM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromClass
+INFO: Creating Service {http://localhost/wsdl}CotacaoService from class ws.CotacaoWS
+Mai 30, 2014 12:45:17 AM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be http://nopath:80
+Mai 30, 2014 12:45:17 AM org.apache.openejb.server.webservices.WsService afterApplicationCreated
+INFO: Webservice(wsdl=http://localhost:8080/restee/webservices/CotacaoWS, qname={http://localhost/wsdl}CotacaoService) --> Ejb(id=CotacaoWS)
+Mai 30, 2014 12:45:17 AM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromClass
+INFO: Creating Service {http://localhost/wsdl}CargoService from class ws.CargoWS
+Mai 30, 2014 12:45:17 AM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be http://nopath:80
+Mai 30, 2014 12:45:17 AM org.apache.openejb.server.webservices.WsService afterApplicationCreated
+INFO: Webservice(wsdl=http://localhost:8080/restee/webservices/CargoWS, qname={http://localhost/wsdl}CargoService) --> Ejb(id=CargoWS)
+Mai 30, 2014 12:45:17 AM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromClass
+INFO: Creating Service {http://localhost/wsdl}ProdutoService from class ws.ProdutoWS
+Mai 30, 2014 12:45:18 AM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be http://nopath:80
+Mai 30, 2014 12:45:18 AM org.apache.openejb.server.webservices.WsService afterApplicationCreated
+INFO: Webservice(wsdl=http://localhost:8080/restee/webservices/ProdutoWS, qname={http://localhost/wsdl}ProdutoService) --> Ejb(id=ProdutoWS)
+Mai 30, 2014 12:45:18 AM org.apache.cxf.service.factory.ReflectionServiceFactoryBean buildServiceFromClass
+INFO: Creating Service {http://localhost/wsdl}PedidoService from class ws.PedidoWS
+Mai 30, 2014 12:45:18 AM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be http://nopath:80
+Mai 30, 2014 12:45:18 AM org.apache.openejb.server.webservices.WsService afterApplicationCreated
+INFO: Webservice(wsdl=http://localhost:8080/restee/webservices/PedidoWS, qname={http://localhost/wsdl}PedidoService) --> Ejb(id=PedidoWS)
+Mai 30, 2014 12:45:20 AM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be http://localhost:8080/restee/api
+Mai 30, 2014 12:45:20 AM org.apache.openejb.server.rest.RESTService deployPojo
+INFO: REST Service: http://localhost:8080/restee/api/produtos/*  -> Pojo api.Produtos
+Mai 30, 2014 12:45:20 AM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be http://localhost:8080/restee/api
+Mai 30, 2014 12:45:20 AM org.apache.openejb.server.rest.RESTService deployPojo
+INFO: REST Service: http://localhost:8080/restee/api/pedidos/*  -> Pojo api.Pedidos
+Mai 30, 2014 12:45:20 AM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be http://localhost:8080/restee/api
+Mai 30, 2014 12:45:20 AM org.apache.openejb.server.rest.RESTService deployPojo
+INFO: REST Service: http://localhost:8080/restee/api/cotacoes/*  -> Pojo api.Cotacoes
+Mai 30, 2014 12:45:20 AM org.apache.openejb.server.rest.RESTService afterApplicationCreated
+INFO: REST application deployed: api.config.ApplicationConfig
+Mai 30, 2014 12:45:21 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory C:\Users\Matheus Santana\Documents\Nova pasta\outro\target\apache-tomee\webapps\tomee
+Mai 30, 2014 12:45:21 AM org.apache.tomee.catalina.TomcatWebAppBuilder init
+INFO: -------------------------
+TomcatWebAppBuilder.init /tomee
+Mai 30, 2014 12:45:21 AM org.apache.openejb.util.OptionsLog info
+INFO: Using 'openejb.session.manager=org.apache.tomee.catalina.session.QuickSessionManager'
+Mai 30, 2014 12:45:21 AM org.apache.openejb.config.ConfigurationFactory configureApplication
+INFO: Configuring enterprise application: C:\Users\Matheus Santana\Documents\Nova pasta\outro\target\apache-tomee\webapps\tomee
+Mai 30, 2014 12:45:21 AM org.apache.openejb.config.AppInfoBuilder build
+INFO: Enterprise application "C:\Users\Matheus Santana\Documents\Nova pasta\outro\target\apache-tomee\webapps\tomee" loaded.
+Mai 30, 2014 12:45:21 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFO: Assembling app: C:\Users\Matheus Santana\Documents\Nova pasta\outro\target\apache-tomee\webapps\tomee
+Mai 30, 2014 12:45:21 AM org.apache.openejb.cdi.CdiBuilder initSingleton
+INFO: Existing thread singleton service in SystemInstance() org.apache.openejb.cdi.ThreadSingletonServiceImpl@7d8e7369
+Mai 30, 2014 12:45:21 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFO: OpenWebBeans Container is starting...
+Mai 30, 2014 12:45:21 AM org.apache.webbeans.plugins.PluginLoader startUp
+INFO: Adding OpenWebBeansPlugin : [CdiPlugin]
+Mai 30, 2014 12:45:21 AM org.apache.webbeans.plugins.PluginLoader startUp
+INFO: Adding OpenWebBeansPlugin : [OpenWebBeansJsfPlugin]
+Mai 30, 2014 12:45:21 AM org.apache.openejb.cdi.BeansDeployer validateInjectionPoints
+INFO: All injection points are validated successfully.
+Mai 30, 2014 12:45:21 AM org.apache.openejb.cdi.OpenEJBLifecycle startApplication
+INFO: OpenWebBeans Container has started, it took 17 ms.
+Mai 30, 2014 12:45:21 AM org.apache.openejb.assembler.classic.Assembler createApplication
+INFO: Deployed Application(path=C:\Users\Matheus Santana\Documents\Nova pasta\outro\target\apache-tomee\webapps\tomee)
+Mai 30, 2014 12:45:22 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Mai 30, 2014 12:45:22 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Mai 30, 2014 12:45:22 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 12819 ms
